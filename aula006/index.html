@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Dom Aula 06</title>
+    <style>
+        div#area {
+            font: normal 2pt arial;
+background: rgb(230, 48, 48)
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div id=''area'' onclick="Clicar()" onmouseenter="entrar()" onmouseout="sair")>
+    interaja....
+ </div>
+
+
+<script>
+    // var a = window.documeent.getElementById('area')
+    // a. addEventListerner('click',clicar)
+    // a. addEventListerner('mouseenter',entrar)
+    // a. addEventListerner('mouseout',sair)        Tambem podemos fazer desta forma 
+    var a = window.document.getElementById('area')
+
+    function clicar(){
+        a.innerText = 'clicou!'
+        a.style.backgrounde = 'red'
+    }
+    function Entrar(){
+        a.innerText = 'entrou!'
+    }
+    function sair(){
+        a.innerText = 'saiu!'
+        a.style.background = 'green'
+    }
+     
+    </script>
+</body>
+</html>
